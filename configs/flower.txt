@@ -1,0 +1,35 @@
+
+dataset_name = llff
+datadir = ./data/nerf_llff_data/flower
+expname =  tensorf_flower0_Triplane_rand_ori0.5
+basedir = ./log
+
+downsample_train = 4.0
+ndc_ray = 1
+
+n_iters = 30000
+batch_size = 4096
+
+N_voxel_init = 2097156 # 128**3
+N_voxel_final = 262144000 #27000000 # 300**3
+
+upsamp_list = [2000,3000,4000,5500] # [2000,3000,4000,5500,7000]
+update_AlphaMask_list = [2500] # [2000,4000]
+
+N_vis = -1 # vis all testing images
+vis_every = 20000
+
+render_test = 1
+#render_path = 1
+
+fea2denseAct = softplus
+
+#L1_weight_inital = 8e-5
+#L1_weight_rest = 4e-5
+TV_weight_density = 1e-2
+TV_weight_app = 1e-2
+Orientation_loss = 0.5
+rm_weight_mask_thre = 1e-4
+
+model_name = BTDRF
+
