@@ -7,7 +7,7 @@ The further cleaning up of our README page is processing.
 
 ## Installation
 
-#### Tested on Ubuntu 20.04 + Pytorch 1.13.1 and Ubuntu 22.04 + Pytorch 1.13.1
+#### Tested on Ubuntu 20.04 and Ubuntu 22.04 with Pytorch 1.13.1
 
 Install environment:
 ```
